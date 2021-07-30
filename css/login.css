@@ -4,7 +4,7 @@
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --bark-cyan: hsl(184, 100%, 22%);
-  --bery-dark-cyan: hsl(179, 100%, 13%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --very-light-gray: hsl(0, 0%, 95%);
   --background-color: #f2f2f2;
@@ -59,7 +59,7 @@ body {
   background-color: var(--bark-cyan);
 }
 .grid-item_luxury {
-  background-color: var(--bery-dark-cyan);
+  background-color: var(--very-dark-cyan);
   border-radius: 0 0 10px 10px;
 }
 .btn {
@@ -67,18 +67,31 @@ body {
   height: 50px;
   margin-top: 20px;
   font-family: var(--lexend-deca);
-  font-weight: bold;
   border: none;
   border-radius: 30px;
+}
+.btn:hover {
+  cursor: pointer;
+  border: 2px solid var(--very-light-gray);
+  color: var(--very-light-gray);
 }
 .btn-sedan {
   color: var(--bright-orange);
 }
+.btn-sedan:hover {
+  background-color: var(--bright-orange);
+}
 .btn-suvs {
   color: var(--bark-cyan);
 }
+.btn-suvs:hover {
+  background-color: var(--bark-cyan);
+}
 .btn-luxury {
-  color: var(--bery-dark-cyan);
+  color: var(--very-dark-cyan);
+}
+.btn-luxury:hover {
+  background-color: var(--very-dark-cyan);
 }
 .attribution {
   width: 80%;
@@ -105,12 +118,13 @@ body {
     background-color: var(--bright-orange);
   }
   .grid-item_luxury {
-    background-color: var(--bery-dark-cyan);
+    background-color: var(--very-dark-cyan);
     border-radius: 0 10px 10px 0;
   }
   .btn {
     margin-top: 90px;
   }
+
   .attribution {
     display: none;
   }
