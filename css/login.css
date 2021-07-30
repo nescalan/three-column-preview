@@ -70,28 +70,14 @@ body {
   border: none;
   border-radius: 30px;
 }
-.btn:hover {
-  cursor: pointer;
-  border: 2px solid var(--very-light-gray);
-  color: var(--very-light-gray);
-}
 .btn-sedan {
   color: var(--bright-orange);
-}
-.btn-sedan:hover {
-  background-color: var(--bright-orange);
 }
 .btn-suvs {
   color: var(--bark-cyan);
 }
-.btn-suvs:hover {
-  background-color: var(--bark-cyan);
-}
 .btn-luxury {
   color: var(--very-dark-cyan);
-}
-.btn-luxury:hover {
-  background-color: var(--very-dark-cyan);
 }
 .attribution {
   width: 80%;
@@ -124,7 +110,20 @@ body {
   .btn {
     margin-top: 90px;
   }
-
+  .btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+  }
+  .btn-sedan:hover {
+    background-color: var(--bright-orange);
+  }
+  .btn-suvs:hover {
+    background-color: var(--bark-cyan);
+  }
+  .btn-luxury:hover {
+    background-color: var(--very-dark-cyan);
+  }
   .attribution {
     display: none;
   }
