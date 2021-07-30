@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --bark-cyan: hsl(184, 100%, 22%);
+  --bery-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --background-color: #f2f2f2;
+  --lexend-deca: "Lexend Deca", sans-serif;
+  --big-shoulders-display: "Big Shoulders Display", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: var(--lexend-deca);
+}
+body {
+  font-size: 1.5rem;
+  background-color: var(--background-color);
+}
+
+.grid-container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+.grid-item {
+  width: 90%;
+  height: 430px;
+  padding: 40px 40px;
+}
+.grid-item h1 {
+  padding: 30px 0;
+  font-family: var(--big-shoulders-display);
+  font-size: 3.9rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+.grid-item p {
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--transparent-white);
+}
+.grid-item_sedan {
+  border-radius: 10px 10px 0 0;
+  background-color: var(--bright-orange);
+}
+.grid-item_suv {
+  background-color: var(--bark-cyan);
+}
+.grid-item_luxury {
+  background-color: var(--bery-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+.btn {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: var(--lexend-deca);
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+}
+.btn-sedan {
+  color: var(--bright-orange);
+}
+.btn-suvs {
+  color: var(--bark-cyan);
+}
+.btn-luxury {
+  color: var(--bery-dark-cyan);
+}
+.attribution {
+  width: 80%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ***** MEDIA QUERIES 1440px ***** */
+@media (min-width: 992px) {
+  .grid-container {
+    width: 1440px;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-item {
+    width: 310px;
+    height: 500px;
+    padding: 40px 40px;
+  }
+  .grid-item_sedan {
+    border-radius: 10px 0 0 10px;
+    background-color: var(--bright-orange);
+  }
+  .grid-item_luxury {
+    background-color: var(--bery-dark-cyan);
+    border-radius: 0 10px 10px 0;
+  }
+  .btn {
+    margin-top: 90px;
+  }
+  .attribution {
+    display: none;
+  }
+}
