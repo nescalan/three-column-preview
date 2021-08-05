@@ -79,11 +79,6 @@ body {
 .btn-luxury {
   color: var(--very-dark-cyan);
 }
-.attribution {
-  width: 80%;
-  margin: -60px auto;
-  text-align: center;
-}
 
 /* 
 =============================
@@ -127,11 +122,5 @@ body {
   }
   .btn-luxury:hover {
     background-color: var(--very-dark-cyan);
-  }
-  .attribution {
-    width: 100%;
-    margin-top: -150px;
-    margin: -160px auto 0 auto;
-    text-align: center;
   }
 }
